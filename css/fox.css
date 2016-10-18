@@ -1,0 +1,47 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 1024px;
+  }
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  color: #e1e1e1;
+}
+
+a {
+  color: #e1e1e1;
+  font-weight: 600;
+}
+
+a:hover {
+  color: #fff;
+  background: #333;
+}
+
+.navbar {
+  background: #333;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.navbar-header .brand {
+  width: 36px;
+  height: 45px;
+  float: left;
+  display: block;
+  background-image: url(../img/fox-news-logo.png);
+  background-repeat: no-repeat;
+  background-position: 0 6px;
+  margin-right: 2em;
+}
+
+.bg-gray {
+  background-color: #333;
+  padding: 3em 0;
+}
+
+.sub-players {
+  background: #fff;
+  color: #333;
+}

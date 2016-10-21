@@ -46,11 +46,18 @@ a:hover {
   color: #333;
 }
 
-.btn-enlarge {
+a.btn-enlarge {
+  margin-top: 3px;
+  color: #666;
+  background: #222;
+  padding: 6px 10px;
+  line-height: 26px;
   float: right;
-  margin-right: 52%;
+  text-decoration: none;
 }
 
-.btn-enlarge.big {
-  margin-right: 30px;
+a.btn-enlarge:hover {
+  background: #222;
+  color: #fff;
+  text-decoration: none;
 }

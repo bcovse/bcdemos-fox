@@ -45,3 +45,12 @@ a:hover {
   background: #fff;
   color: #333;
 }
+
+.btn-enlarge {
+  float: right;
+  margin-right: 52%;
+}
+
+.btn-enlarge.big {
+  margin-right: 30px;
+}

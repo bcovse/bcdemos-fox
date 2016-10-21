@@ -7,6 +7,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="lib/demoPlayer.js"></script>
   <script src="lib/nav.js"></script>
+  <script src="js/fox.js"></script>
   <link rel="icon" href="img/favicon.ico">
 
   <script>
@@ -122,9 +123,12 @@
     <div class="row">
       <div class="col-sm-6 featured-player" id="main">
       </div>
-      <div class="col-sm-6">
+      <div class="col-sm-6 meta">
         What do we want to put here?
       </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12"><a href="#" class="btn-enlarge">Enlarge</a></div>
     </div>
     <div class="playlist-wrapper"> <ol class="vjs-playlist"></ol></div>
   </div>
@@ -136,5 +140,8 @@
     <div class="col-sm-4" id='small3'>column 3</div>
   </div>
 </div>
+<script>
+  tds=document.getElementsByTagName('td');last='';for (i=0; i -1 && inner.indexOf('<') < 0 && inner != last;) { console.log(tds[i].innerHTML); last=inner; }
+</script>
 </body>
 </html>

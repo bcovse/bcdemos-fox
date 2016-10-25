@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  $(document).on('playerLoaded', function() {
+  $(document).on('playerLoaded', function(e, vidId) {
+    $('.meta').html('<div class="video-name">' + vidId.metadata.name + '</div><div class="video-description">' + vidId.metadata.description + '</div>');
 
     $('#main').append('<a href="#" class="btn-enlarge">Enlarge</a>');
 
@@ -10,14 +11,14 @@ $(document).ready(function() {
             width: w/2},
           1000,
           function() {
-            $('.meta').show();
+            //$('.meta').show();
             $('#main').removeClass('col-sm-12').addClass('col-sm-6');
           }
         );
         $(this).removeClass('big').text('Enlarge');
       }
       else {
-        $('.meta').hide();
+        //$('.meta').hide();
         $('#main').animate({
             width: w},
           1000,

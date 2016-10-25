@@ -61,3 +61,15 @@ a.btn-enlarge:hover {
   color: #fff;
   text-decoration: none;
 }
+
+.meta .video-name {
+  clear: left;
+  color: #e1e1e1;
+  font: 400 24px/32px "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin-bottom: 4px;
+}
+
+.meta .video-description {
+  color: #999;
+  line-height: 1.8;
+}

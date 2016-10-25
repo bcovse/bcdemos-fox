@@ -1,6 +1,14 @@
 $(document).ready(function() {
-  $(document).on('playerLoaded', function(e, vidId) {
-    $('.meta').html('<div class="video-name">' + vidId.metadata.name + '</div><div class="video-description">' + vidId.metadata.description + '</div>');
+  $(document).on('playerLoaded', function(e, vidObj) {
+    if (!vidObj.metadata) {
+      setTimeout(function() {
+        $('.meta').html('<div class="video-name">' + vidObj.mediainfo.name + '</div><div class="video-description">' + vidObj.mediainfo.description + '</div>');
+      }, 200)
+    }
+    else {
+      $('.meta').html('<div class="video-name">' + vidObj.metadata.name + '</div><div class="video-description">' + vidObj.metadata.description + '</div>');
+    }
+
 
     $('#main').append('<a href="#" class="btn-enlarge">Enlarge</a>');
 

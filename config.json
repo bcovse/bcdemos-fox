@@ -6,16 +6,16 @@
       "defaultVideo": "4527128898001"
     },
 
-    "big-bg": {
-      "comment": "Background player for home page",
+    "social": {
+      "comment": "Endscreen with social sharing",
       "accountId": "4365621380001",
       "bcPlayerId": "59579bce-1612-4607-8e8d-adc5db73766d",
       "defaultVideo": "5149268447001",
-      "autoplay": true,
-      "muted": true,
-      "controls": false,
-      "noposter": true,
-      "loop": true,
+      "autoplay": false,
+      "muted": false,
+      "controls": true,
+      "noposter": false,
+      "loop": false,
       "plugins": {
         "noPoster": {
           "js": "./js/noPoster.js",

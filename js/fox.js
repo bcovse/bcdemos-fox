@@ -8,7 +8,6 @@ $(document).ready(function() {
       setTimeout(function() {
         var services = vidObj.socialSettings.services;
         var svcStr = '';
-        console.log(services);
         if (typeof services != 'undefined') {
           for (var service in services) {
             svcStr += getSocialLink(service, services[service], vidObj);

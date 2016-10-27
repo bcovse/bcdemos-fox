@@ -84,3 +84,49 @@ a.btn-enlarge:hover {
   position: absolute;
   width: 1px;
 }
+
+/** Playlists **/
+.container-fluid.playlist-wrapper {
+  background-color: #1a1a1a;
+  margin-top: 20px;
+}
+
+.vjs-mouse.vjs-playlist {
+  font-size: 17px;
+  min-width: 289px;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 10px 0 0 0;
+  height: 150px;
+  margin: auto;
+}
+
+.vjs-mouse.vjs-playlist .vjs-playlist-item {
+  height: 120px;
+  margin: 10px 10px 10px 0;
+  float: left;
+  width: 140px;
+  overflow-x: scroll;
+}
+
+.vjs-mouse.vjs-playlist .vjs-playlist-thumbnail {
+  height: 68px;
+  font-size: 13px;
+  margin-right: 17px;
+  width: 121px;
+  clear: both;
+}
+
+.vjs-mouse.vjs-playlist cite {
+  height: 23px;
+  line-height: 12px;
+  clear: both;
+  padding-top: 10px;
+  font-size: .7em;
+}
+
+.vjs-mouse.vjs-playlist .vjs-playlist-description {
+  height: 24px;
+  line-height: 21px;
+  font-size: .8em;
+}

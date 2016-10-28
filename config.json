@@ -54,7 +54,7 @@
       "plugins": {
         "manualRenditionSelection": {
           "js": "./js/manualRenditionSelection.js",
-          "css": "./js/manualRenditionSelection.css",
+          "css": "./css/manualRenditionSelection.css",
           "options": {}
         },
         "upNext": {

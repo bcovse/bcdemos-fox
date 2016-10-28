@@ -216,23 +216,28 @@
       "img": "img/teamphotonew-1268-getty.png"
     },
     "2": {
-      "link": "loadPoc2()",
-      "text": "Security",
+      "link": "return false;",
+      "text": "PIP",
       "img": "img/moore-1268-getty.png"
     },
     "3": {
-      "link": "loadPoc3()",
-      "text": "Manual Switching",
+      "link": "return false;",
+      "text": "Captions",
       "img": "img/mickelson-1268-getty.png"
     },
     "4": {
-      "link": "loadPoc4()",
-      "text": "Recommendations",
+      "link": "return false;",
+      "text": "End Screen",
       "img": "img/reedmcilroy-1268-getty.png"
     },
     "5": {
-      "link": "loadPoc5()",
-      "text": "Thumbnail Scrubber",
+      "link": "return false;",
+      "text": "Ads",
+      "img": "img/recapschamps-1268-getty.png"
+    },
+    "6": {
+      "link": "return false;",
+      "text": "Performance",
       "img": "img/recapschamps-1268-getty.png"
     }
   }

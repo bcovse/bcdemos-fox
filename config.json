@@ -274,7 +274,7 @@
       "img": "img/reedmcilroy-1268-getty.png"
     },
     "5": {
-      "link": "return false;",
+      "link": "loadPoc6();",
       "text": "Ads",
       "img": "img/recapschamps-1268-getty.png"
     },

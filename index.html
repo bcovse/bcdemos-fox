@@ -62,6 +62,12 @@
       $( ".playlist-wrapper" ).show();
     }
 
+    function loadPoc6() {
+      destroyAllPlayers();
+      hideAllDynamic();
+      createPlayer( 'p0', 'ad-std', 'main', null);
+    }
+
 
     function loadHome() {
       createPlayer('fs', 'big-bg', 'bg-video', null);

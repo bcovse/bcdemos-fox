@@ -52,11 +52,6 @@
       "playlistId": "4598147255001",
       "controls": true,
       "plugins": {
-        "manualRenditionSelection": {
-          "js": "./js/manualRenditionSelection.js",
-          "css": "./css/manualRenditionSelection.css",
-          "options": {}
-        },
         "upNext": {
           "js": "./js/upNext.js",
           "css": "./css/upNext.css",
@@ -112,6 +107,32 @@
         "none": {
           "js": "http://solutions.brightcove.com/dbornstein/dev/bcdemos/bell/boltThumbs.js",
           "css": "https://rawgit.com/brightcove/videojs-thumbnails/master/videojs.thumbnails.css"
+        }
+      }
+    },
+    "endscreen": {
+      "comment": "Playlist Player with custom endscreen",
+      "accountId": "4165107200001",
+      "bcPlayerId": "ryXDWbTh",
+      "defaultVideo": "4598862275001",
+      "playlistId": "4598147255001",
+      "controls": true,
+      "plugins": {
+        "manualRenditionSelection": {
+          "js": "./js/manualRenditionSelection.js",
+          "css": "./css/manualRenditionSelection.css",
+          "options": {}
+        },
+        "related": {
+          "js": "//solutions.brightcove.com/bclifford/demo/player/js/videojs-related.min.js",
+          "css": "//solutions.brightcove.com/bclifford/demo/player/css/videojs-related.css",
+          "options": {
+            "source": "related",
+            "token": "PvXQ5LwozBUo6w4_a_A2JGWS42E0JggkcgYvpXSolYFQd_rQBfOXzg..",
+            "link": {
+              "field": "link.url"
+            }
+          }
         }
       }
     },
@@ -226,7 +247,7 @@
       "img": "img/mickelson-1268-getty.png"
     },
     "4": {
-      "link": "return false;",
+      "link": "loadPoc5();",
       "text": "End Screen",
       "img": "img/reedmcilroy-1268-getty.png"
     },

@@ -96,6 +96,28 @@
       "defaultVideo": "2813092874001",
       "autoplay": true
     },
+    "pip": {
+      "comment": "PiP player",
+      "accountId": "4365621380001",
+      "bcPlayerId": "59579bce-1612-4607-8e8d-adc5db73766d",
+      "defaultVideo": "",
+      "autoplay": false,
+      "controls": true,
+      "plugins": {
+        "pip": {
+          "js": "./js/pip.js",
+          "css": "./css/pip.css",
+          "options": {}
+        }
+      }
+    },
+    "pip_inner": {
+      "comment": "PiP player",
+      "accountId": "1924997959001",
+      "bcPlayerId": "6fa531af-7118-4114-b7ab-985898910538",
+      "defaultVideo": "",
+      "autoplay": false
+    },
     "scrubber": {
       "comment": "Scrubber Player from NAB Demo site. Needed since this uses Bolt.",
       "accountId": "906043040001",
@@ -237,7 +259,7 @@
       "img": "img/teamphotonew-1268-getty.png"
     },
     "2": {
-      "link": "return false;",
+      "link": "loadPoc3();",
       "text": "PIP",
       "img": "img/moore-1268-getty.png"
     },

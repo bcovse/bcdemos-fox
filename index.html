@@ -44,7 +44,9 @@
       destroyAllPlayers();
       hideAllDynamic();
 
-      createPlayer( 'p0', 'pip', 'main', null);
+      $('#main').removeClass('col-sm-6').addClass('col-sm-12');
+      createPlayer('inner_player', 'pip_inner', 'hidden', null);
+      createPlayer('outer_player', 'pip', 'main', null);
     }
 
     function loadPoc4() {
@@ -88,6 +90,7 @@
 
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/fox.css" />
   <link rel="stylesheet" href="https://rawgit.com/brightcove/videojs-thumbnails/master/videojs.thumbnails.css" />
 </head>
@@ -123,8 +126,7 @@
 <div class="bg-gray">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 featured-player" id="main">
-      </div>
+      <div class="col-sm-6 featured-player" id="main"></div>
       <div class="col-sm-6 meta"></div>
     </div>
   </div>
@@ -147,6 +149,7 @@
     <div class="col-sm-4" id='small3'>column 3</div>
   </div>
 </div>
+<div id="hidden"></div>
 <script>
   tds=document.getElementsByTagName('td');last='';for (i=0; i -1 && inner.indexOf('<') < 0 && inner != last;) { console.log(tds[i].innerHTML); last=inner; }
 </script>

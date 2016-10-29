@@ -1,0 +1,36 @@
+.holder {
+  display: table;
+  width: 100%;
+}
+
+.video-js {
+  position: absolute;
+}
+
+#inner_player .vjs-control-bar {
+  visibility: hidden;
+}
+
+#inner_player .vjs-big-play-button {
+  visibility: hidden;
+}
+
+.highlight {
+  color: black;
+  position: absolute;
+}
+
+.highlight-img {
+  position: absolute;
+  width: 160px;
+  height: 90px;
+  max-width: 160px;
+}
+
+.back {
+  z-index: -10;
+}
+
+.front {
+  z-index: 10;
+}

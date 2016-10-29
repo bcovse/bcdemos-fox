@@ -2,6 +2,7 @@ $(document).ready(function() {
   $(document).on('playerLoaded', function(e, player) {
     var vidType = '';
     var meta = '';
+    $('.meta').html();
 
     // If there's metadata associated with the asset, display it in the page
     if (!player.metadata) {

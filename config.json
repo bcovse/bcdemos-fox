@@ -17,8 +17,9 @@
       "noposter": false,
       "loop": false,
       "plugins": {
-        "noPoster": {
-          "js": "./js/noPoster.js",
+        "rewind": {
+          "js": "./js/rewind.js",
+          "css": "./css/rewind.css",
           "options": {}
         }
       }

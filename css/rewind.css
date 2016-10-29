@@ -1,0 +1,19 @@
+.vjs-control-bar .rewind img {
+  width: 40px;
+  height: 40px;
+  margin-top: -5px;
+  padding: 0;
+}
+
+.vjs-control-bar .rewind a {
+  height:40px;
+}
+
+.vjs-control-bar .rewind a:hover {
+  background: transparent;
+  text-shadow: 0 0 1em #fff,0 0 1em #fff,0 0 1em #fff;
+}
+
+.vjs-control-bar .rewind:hover {
+  text-shadow: 0 0 1em #fff,0 0 1em #fff,0 0 1em #fff;
+}

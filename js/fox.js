@@ -3,17 +3,23 @@ $(document).ready(function() {
     var vidType = '';
     var meta = '';
 
+    // If there's metadata associated with the asset, display it in the page
     if (!player.metadata) {
       vidType = 'vc';
       meta = '<div class="video-name">' + player.mediainfo.name + '</div><div class="video-description">' + player.mediainfo.description + '</div>';
+
+      // If the player is configured for social links, display in page
       if (typeof player.socialSettings != 'undefined') {
         var services = player.socialSettings.services;
         var svcStr = '';
+
+        // Iterate the social linking services and build the link for each
         if (typeof services != 'undefined') {
           for (var service in services) {
             svcStr += getSocialLink(service, services[service], player);
           }
         }
+        // Add social links to the DOM
         if (svcStr != '') {
           meta += '<div class="vjs-social-overlay"><div class="vjs-social-share-links">' + svcStr + '</div></div>';
         }
@@ -21,14 +27,19 @@ $(document).ready(function() {
       $('.meta').html(meta);
     }
     else {
+
+      // If we don't have a VC video but there's mediainfo data associated, display that instead
       vidType = 'perform';
       meta = '<div class="video-name">' + player.metadata.name + '</div><div class="video-description">' + player.metadata.description + '</div>';
       $('.meta').html(meta);
     }
 
+    /** Event handler for the enlarge/reduce button **/
+    //Make sure we don't add more than one
     if ($('.btn-enlarge').length == 0) {
       $('#main').append('<a href="#" class="btn-enlarge">Enlarge</a>');
 
+      // If we're small, get bigger. If we're big, get small
       $('.btn-enlarge').click(function () {
         var w = $('.container').width();
         if ($(this).hasClass('big')) {
@@ -58,6 +69,13 @@ $(document).ready(function() {
   });
 });
 
+/**
+ * Helper to build the html for a social link
+ * @param key
+ * @param val
+ * @param player
+ * @returns {string}
+ */
 function getSocialLink(key, val, player) {
   var str = '';
   if (val == true) {

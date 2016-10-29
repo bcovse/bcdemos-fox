@@ -137,7 +137,7 @@ function createHighlights() {
     highlight.jqCue.css('left', 0);
     highlight.jqCue.css('marginLeft', (highlight.position / videoData.duration * 100) + '%');
     highlight.jqCue.css('marginTop', '-3px');
-    highlight.jqCue.css('fontSize', ('13px');
+    highlight.jqCue.css('fontSize', '13px');
 
     // create the image (it will not be a child of the cue)
     highlight.jqImg = $('<img class="highlight-img hidden" src="' + highlight.poster + '" />');

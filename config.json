@@ -29,7 +29,7 @@
       "comment": "Std Player with IMA",
       "accountId": "4165107200001",
       "bcPlayerId": "SJ8voc23",
-      "defaultVideo": "4598862275001",
+      "defaultVideo": "5189018514001",
       "autoplay": true,
       "muted": true,
       "plugins": {
@@ -49,8 +49,8 @@
       "comment": "Playlist Player with IMA",
       "accountId": "4165107200001",
       "bcPlayerId": "ryXDWbTh",
-      "defaultVideo": "4598862275001",
-      "playlistId": "4598147255001",
+      "defaultVideo": "5189018514001",
+      "playlistId": "5188887730001",
       "controls": true,
       "plugins": {
         "upNext": {

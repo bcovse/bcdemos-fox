@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,26 +14,26 @@
 
   <script>
 
-    function hideAllDynamic() {
-      $( ".playlist-wrapper" ).hide();
-      $( ".sub-players" ).hide();
-    }
+  function hideAllDynamic() {
+    $( ".playlist-wrapper" ).hide();
+    $( ".sub-players" ).hide();
+  }
 
-    function loadPoc1() {
+  function loadPoc1() {
 
-      destroyAllPlayers();
-      hideAllDynamic();
+    destroyAllPlayers();
+    hideAllDynamic();
 
-      createPlayer( 'p0', 'ad-playlist', 'main',  null);
-      $( ".playlist-wrapper" ).show();
-    }
+    createPlayer( 'p0', 'ad-playlist', 'main',  null);
+    $( ".playlist-wrapper" ).show();
+  }
 
-    function loadPoc2() {
+  function loadPoc2() {
 
-      destroyAllPlayers();
-      hideAllDynamic();
+    destroyAllPlayers();
+    hideAllDynamic();
 
-      createPlayer( 'p0', 'social', 'main',   null);
+    createPlayer( 'p0', 'social', 'main',   null);
       // createPlayer( 'p1', 'drm', 'main', 'drm1');
       // createPlayer( 'p2', 'drm', 'small2', 'drm1');
       // createPlayer( 'p3', 'drm', 'small3', 'drm1');
@@ -87,41 +88,42 @@
         loadPoc2();
         loadTopNav($('ul.navbar-nav'));
       })
-          .fail(function() {
-            console.log( "error loading JSON configuration File." );
-          })
+      .fail(function() {
+        console.log( "error loading JSON configuration File." );
+      })
     })();
 
-  </script>
+    </script>
 
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/fox.css" />
-  <link rel="stylesheet" href="https://rawgit.com/brightcove/videojs-thumbnails/master/videojs.thumbnails.css" />
-</head>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fox.css" />
+    <link rel="stylesheet" href="https://rawgit.com/brightcove/videojs-thumbnails/master/videojs.thumbnails.css" />
+  </head>
 
-<body>
-<nav class="navbar navbar-static-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="brand-medium hidden-small">
-        <a class="brand" href="#"></a>
+
+  <body>
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="brand-medium hidden-small">
+            <a class="brand" href="#"></a>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="nav1">
+          <ul class="nav navbar-nav" >
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="collapse navbar-collapse" id="nav1">
-      <ul class="nav navbar-nav" >
-      </ul>
-    </div>
-  </div>
-</nav>
-<div id="bg-video"></div>
+    </nav>
+    <div id="bg-video"></div>
 <!--<div class="container">
   <div class="row">
     <div class="col-md-12">
@@ -132,8 +134,8 @@
 <div class="bg-gray">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 featured-player" id="main"></div>
-      <div class="col-sm-6 meta"></div>
+      <div class="col-sm-7 featured-player" id="main"></div>
+      <div class="col-sm-5 meta"></div>
     </div>
   </div>
   <div class="container-fluid playlist-wrapper">
@@ -150,14 +152,50 @@
 </div>
 <div class="container bg-white sub-players">
   <div class="row">
-    <div class="col-sm-4" id="small1">column 1</div>
-    <div class="col-sm-4" id="small2">column 2</div>
-    <div class="col-sm-4" id='small3'>column 3</div>
+    <div class="col-sm-12" id="documentation_table">
+      <table border="0" cellspacing="0" cellpadding="0"> 
+        <tr> 
+          <th class="th1">Feature</th>
+          <th class="th2">Description</th>
+          <th class="th3">Documentation/Links</th>    
+        </tr>
+        <tr> 
+          <td class="td1">Feed Selectors</td>
+          <td class="td2">Using AJAX and ReactJS we read the feeds from the Fox servers and populate the two selectors. When a feed and a video has been selected the player source is set to the selected video.</td>
+          <td class="td3"><a href="https://support.brightcove.com/en/perform">Perform Player</a></td>
+        </tr>
+        <tr> 
+          <td class="td1">Social Plugin </td>
+          <td class="td2">The social plugin is configure for this player so that once the video has been played the user is presented with options to shared the video on his or her social networks.</td>
+          <td class="td3"><a href="http://docs.brightcove.com/en/perform/brightcove-player/guides/social-media-plugin.html#bcls_header">Social Plugin</a></td>
+        </tr>
+        <tr> 
+          <td class="td1">Advertising</td>
+          <td class="td2">The player has been configured to use the Freewheel plugin to display a canned ad. The ad will be displayed as a pre-roll and also as a mid-roll at 1 minute in to the video.</td>
+          <td class="td3"><a href="http://docs.brightcove.com/en/perform/brightcove-player/guides/freewheel-plugin.html">Freewheel Plugin</a></td>
+        </tr>
+        <tr> 
+          <td class="td1">Moat Analytics</td>
+          <td class="td2">The player has been configured to use the Moat plugin. This is only intended to show how easy it is to setup up the plugin in the Brightcove Player. In a real world scenario you would work with your Moat representative to configure Moat then plugin that configuration in to the player.</td>
+          <td class="td3"><a href="https://www.brightcove.com/en/blog/2016/09/brightcove-moat-team-deliver-video-ad-viewability-1">Moat & Brightcove</a></td>
+        </tr>
+        <tr> 
+          <td class="td1">Comscore Analytics</td>
+          <td class="td2">The player has been configured to use the Comscore plugin. This is not connected to a real Comscore account but it does fire the events.</td>
+          <td class="td3"><a href="https://github.com/brandonaaskov/videojs-comscore">Comscore Plugin</a></td>
+        </tr>
+        <tr> 
+          <td class="td1">Adobe Analytics</td>
+          <td class="td2">The player has been configured to use the Omniture plugin. This is not connected to a real Omniture account but it does fire the events.</td>
+          <td class="td3"><a href="https://github.com/BrightcoveOS/videojs-omniture">Omniture Plugin</a></td>
+        </tr>
+      </table>
+    </div>
   </div>
 </div>
 <div id="hidden"></div>
 <script>
-  tds=document.getElementsByTagName('td');last='';for (i=0; i -1 && inner.indexOf('<') < 0 && inner != last;) { console.log(tds[i].innerHTML); last=inner; }
+tds=document.getElementsByTagName('td');last='';for (i=0; i -1 && inner.indexOf('<') < 0 && inner != last;) { console.log(tds[i].innerHTML); last=inner; }
 </script>
 </body>
 </html>

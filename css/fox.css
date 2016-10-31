@@ -141,14 +141,14 @@ a.btn-enlarge:hover {
 }
 
 table { width: 100%; padding:0; margin:0 auto;  }
-table th { padding: 4px 10px; color: #ccc; background-color: #000; border-right: 2px solid #2982d6; }
+table th { padding: 4px 10px; color: #ccc; background-color: #000; border-right: 2px solid gray; }
 table .th1 { width:150px; }
 table .th2 {  }
 table .th3 { width:180px; }
 
 table td { padding: 8px 15px; border-bottom: 1px solid #333; }
-.td1 { width:150px; border-right: 2px solid #4f94d5; }
-.td2 { border-right: 2px solid #4f94d5; }
+.td1 { width:150px; border-right: 2px solid black; }
+.td2 { border-right: 2px solid black; }
 .td3 { width:180px; text-align: center; }
 .td3 a, .td3 a:Link, .td3 a:Visited { text-decoration:underline; color:#000; }
 .td3 a:Hover { text-decoration:underline; color:#CCC; }

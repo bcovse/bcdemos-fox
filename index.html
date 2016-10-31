@@ -10,6 +10,7 @@
   <script src="lib/demoPlayer.js"></script>
   <script src="lib/nav.js"></script>
   <script src="js/fox.js"></script>
+  <script src="lib/playerStats.js"></script>
   <link rel="icon" href="img/favicon.png">
 
   <script>
@@ -150,6 +151,30 @@
     </div>
   </div>
 </div>
+
+<div class="player-stats dropshadow">
+  <h3>Player Statistics</h3>
+  <ul class="stat-list">
+    <li><span>Current Time:</span><span class="current-time-stat">0</span></li>
+    <li><span>Buffered:</span><span class="buffered-stat">0 - 0</span></li>
+    <li><span>Seekable:</span><span><span class="seekable-start-stat">0</span> - <span class="seekable-end-stat">0</span></span></li>
+    <li><span>Video Bitrate:</span><span class="video-bitrate-stat">0 kbps</span></li>
+    <li><span>Measured Bitrate:</span><span class="measured-bitrate-stat">0 kbps</span></li>
+  </ul>
+</div>
+<div class="player-stats dropshadow">
+  <h3>Player Event Counts</h3>
+  <ul class="stat-list">
+    <li><span>loadedmetadata:</span><span class="loadedmetadata-count">0</span></li>
+    <li><span>play:</span><span class="play-count">0</span></li>
+    <li><span>playing:</span><span class="playing-count">0</span></li>
+    <li><span>pause:</span><span class="pause-count">0</span></li>
+    <li><span>seeking:</span><span class="seeking-count">0</span></li>
+    <li><span>seeked:</span><span class="seeked-count">0</span></li>
+    <li><span>ended:</span><span class="ended-count">0</span></li>
+  </ul>
+</div>
+
 <div class="container bg-white sub-players">
   <div class="row">
     <div class="col-sm-12" id="documentation_table">

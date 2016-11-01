@@ -12,7 +12,7 @@
       "bcPlayerId": "59579bce-1612-4607-8e8d-adc5db73766d",
       "defaultVideo": "5189978007001",
       "autoplay": false,
-      "muted": false,
+      "muted": true,
       "controls": true,
       "noposter": false,
       "loop": false,
@@ -21,6 +21,16 @@
           "js": "./js/rewind.js",
           "css": "./css/rewind.css",
           "options": {}
+        },
+        "ima3": {
+          "js": "//players.brightcove.net/videojs-ima3/2/videojs.ima3.min.js",
+          "css": "http://players.brightcove.net/videojs-ima3/2/videojs.ima3.min.css",
+          "options": {
+            "debug": true,
+            "requestMode": "onload",
+            "hardTimeouts": true,
+            "serverUrl": "https://pubads.g.doubleclick.net/gampad/ads?sz=1080x720&iu=/47279575/PND&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]"
+          }
         }
       }
     },

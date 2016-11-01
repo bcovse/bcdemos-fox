@@ -7,7 +7,7 @@
 
   <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="lib/demoPlayer.js"></script>
+  <script src="js/demoPlayer.js"></script>
   <script src="lib/nav.js"></script>
   <script src="js/fox.js"></script>
   <script src="js/playerStats.js"></script>
@@ -27,8 +27,6 @@
 
     createPlayer( 'p0', 'ad-playlist', 'main',  null);
     $( ".playlist-wrapper" ).show();
-    player = videojs(config.playerId);
-    setupStats(player);
   }
 
   function loadPoc2() {
@@ -42,10 +40,8 @@
       // createPlayer( 'p3', 'drm', 'small3', 'drm1');
 
       $( ".sub-players" ).show();
-      player = videojs(config.playerId);
-      setupStats(player);
-
     }
+
     function loadPoc3() {
 
       destroyAllPlayers();
@@ -54,16 +50,13 @@
       $('#main').removeClass('col-sm-6').addClass('col-sm-12');
       createPlayer('inner_player', 'pip_inner', 'hidden', null);
       createPlayer('outer_player', 'pip', 'main', null);
-      player = videojs(config.playerId);
-      setupStats(player);
     }
 
     function loadPoc4() {
       destroyAllPlayers();
       hideAllDynamic();
       createPlayer( 'p0', 'captions', 'main', null);
-      player = videojs(config.playerId);
-      setupStats(player);
+
 
     }
 
@@ -72,20 +65,13 @@
       hideAllDynamic();
       createPlayer( 'p0', 'endscreen', 'main', null);
       $( ".playlist-wrapper" ).show();
-      player = videojs(config.playerId);
-      setupStats(player);
-
     }
 
     function loadPoc6() {
       destroyAllPlayers();
       hideAllDynamic();
       createPlayer( 'p0', 'ad-std', 'main', null);
-      player = videojs(config.playerId);
-      setupStats(player);
-
     }
-
 
     function loadHome() {
       createPlayer('fs', 'big-bg', 'bg-video', null);

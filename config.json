@@ -107,6 +107,14 @@
       "defaultVideo": "2813092874001",
       "autoplay": true
     },
+    "fox-std": {
+    "comment": "Fox News standard player",
+    "accountId": "4165107200001",
+    "bcPlayerId": "HJxBWWhwll",
+    "defaultVideo": "5189072676001",
+    "autoplay": true,
+    "controls":true
+    },
     "pip": {
       "comment": "PiP player",
       "accountId": "4365621380001",

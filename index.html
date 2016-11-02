@@ -18,31 +18,22 @@
   function hideAllDynamic() {
     $( ".playlist-wrapper" ).hide();
     $( ".sub-players" ).hide();
+    $( ".player-stats" ).hide();
   }
 
+//Playlist
   function loadPoc1() {
-
+    console.log("POC Playlist");
     destroyAllPlayers();
     hideAllDynamic();
 
     createPlayer( 'p0', 'ad-playlist', 'main',  null);
     $( ".playlist-wrapper" ).show();
+    $( ".sub-players" ).show();
   }
 
-  function loadPoc2() {
-
-    destroyAllPlayers();
-    hideAllDynamic();
-
-    createPlayer( 'p0', 'social', 'main',   null);
-      // createPlayer( 'p1', 'drm', 'main', 'drm1');
-      // createPlayer( 'p2', 'drm', 'small2', 'drm1');
-      // createPlayer( 'p3', 'drm', 'small3', 'drm1');
-
-      $( ".sub-players" ).show();
-    }
-
-    function loadPoc3() {
+// PIP
+    function loadPoc2() {
 
       destroyAllPlayers();
       hideAllDynamic();
@@ -52,29 +43,38 @@
       createPlayer('outer_player', 'pip', 'main', null);
     }
 
-    function loadPoc4() {
+// Captions
+    function loadPoc3() {
       destroyAllPlayers();
       hideAllDynamic();
       createPlayer( 'p0', 'captions', 'main', null);
 
-
     }
 
-    function loadPoc5() {
+// End Screen
+    function loadPoc4() {
       destroyAllPlayers();
       hideAllDynamic();
       createPlayer( 'p0', 'endscreen', 'main', null);
-      $( ".playlist-wrapper" ).show();
     }
 
-    function loadPoc6() {
+// Ads
+    function loadPoc5() {
       destroyAllPlayers();
       hideAllDynamic();
       createPlayer( 'p0', 'ad-std', 'main', null);
     }
 
+// Performance
+     function loadPoc6() {
+      destroyAllPlayers();
+      hideAllDynamic();
+      createPlayer( 'p0', 'ad-std', 'main', null);
+      $( ".player-stats").show();
+    }
+
     function loadHome() {
-      createPlayer('fs', 'big-bg', 'bg-video', null);
+//createPlayer('fs', 'big-bg', 'bg-video', null);
       loadTopNav($('ul.navbar-nav'));
       $('.title').remove();
       $('.bg-gray').addClass('home');
@@ -88,14 +88,13 @@
       $.getJSON("config.json", function (data, status, jqxhr) {
         _cfg = data;
         //console.log(_cfg)
-        loadPoc2();
+        loadPoc6();
         loadTopNav($('ul.navbar-nav'));
       })
       .fail(function() {
         console.log( "error loading JSON configuration File." );
       })
     })();
-
     </script>
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
@@ -115,6 +114,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
+
           </button>
           <div class="brand-medium hidden-small">
             <a class="brand" href="#"></a>
@@ -154,29 +154,29 @@
   </div>
 </div>
 
-<div class="container bg-white sub-players">
-<div class="col-sm-12" id="documentation_table">
-  <h3><b>Player Statistics</b></h3>
-  <ul class="stat-list">
-    <li><span>Current Time: </span><span class="current-time-stat">0</span></li>
-    <li><span>Buffered: </span><span class="buffered-stat">0 - 0</span></li>
-    <li><span>Seekable: </span><span><span class="seekable-start-stat">0</span> - <span class="seekable-end-stat">0</span></span></li>
-    <li><span>Video Bitrate: </span><span class="video-bitrate-stat">0 kbps</span></li>
-    <li><span>Measured Bitrate: </span><span class="measured-bitrate-stat">0 kbps</span></li>
-  </ul>
-</div>
-<div class="col-sm-12" id="documentation_table">  
-  <h3><b>Player Event Counts</b></h3>
-  <ul class="stat-list">
-    <li><span>loadedmetadata: </span><span class="loadedmetadata-count">0</span></li>
-    <li><span>play: </span><span class="play-count">0</span></li>
-    <li><span>playing: </span><span class="playing-count">0</span></li>
-    <li><span>pause: </span><span class="pause-count">0</span></li>
-    <li><span>seeking: </span><span class="seeking-count">0</span></li>
-    <li><span>seeked: </span><span class="seeked-count">0</span></li>
-    <li><span>ended: </span><span class="ended-count">0</span></li>
-  </ul>
-</div>
+<div class="container bg-white player-stats">
+  <div class="col-sm-12" id="documentation_table">
+    <h3><b>Player Statistics</b></h3>
+    <ul class="stat-list">
+      <li><span>Current Time: </span><span class="current-time-stat">0</span></li>
+      <li><span>Buffered: </span><span class="buffered-stat">0 - 0</span></li>
+      <li><span>Seekable: </span><span><span class="seekable-start-stat">0</span> - <span class="seekable-end-stat">0</span></span></li>
+      <li><span>Video Bitrate: </span><span class="video-bitrate-stat">0 kbps</span></li>
+      <li><span>Measured Bitrate: </span><span class="measured-bitrate-stat">0 kbps</span></li>
+    </ul>
+  </div>
+  <div class="col-sm-12" id="documentation_table">  
+    <h3><b>Player Event Counts</b></h3>
+    <ul class="stat-list">
+      <li><span>loadedmetadata: </span><span class="loadedmetadata-count">0</span></li>
+      <li><span>play: </span><span class="play-count">0</span></li>
+      <li><span>playing: </span><span class="playing-count">0</span></li>
+      <li><span>pause: </span><span class="pause-count">0</span></li>
+      <li><span>seeking: </span><span class="seeking-count">0</span></li>
+      <li><span>seeked: </span><span class="seeked-count">0</span></li>
+      <li><span>ended: </span><span class="ended-count">0</span></li>
+    </ul>
+  </div>
 </div>
 
 <div class="container bg-white sub-players">

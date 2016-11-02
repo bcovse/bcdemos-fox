@@ -45,6 +45,13 @@ a:hover {
   background: #fff;
   color: #333;
   margin-top: 25px;
+  font color: black;
+}
+
+.player-stats {
+  background: #fff;
+  color: #333;
+  margin-top: 25px;
 }
 
 a.btn-enlarge {

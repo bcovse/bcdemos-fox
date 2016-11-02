@@ -265,33 +265,33 @@
   },
   "navigation": {
     "1": {
-      "link": "loadPoc1()",
-      "text": "Playlist",
+      "link": "loadPoc6()",
+      "text": "Performance",
       "img": "img/teamphotonew-1268-getty.png"
     },
     "2": {
-      "link": "loadPoc3();",
-      "text": "PIP",
+      "link": "loadPoc5();",
+      "text": "Advertising",
       "img": "img/moore-1268-getty.png"
     },
     "3": {
-      "link": "return false;",
-      "text": "Captions",
+      "link": "loadPoc1();",
+      "text": "Playlist",
       "img": "img/mickelson-1268-getty.png"
     },
     "4": {
-      "link": "loadPoc5();",
+      "link": "loadPoc4();",
       "text": "End Screen",
       "img": "img/reedmcilroy-1268-getty.png"
     },
     "5": {
-      "link": "loadPoc6();",
-      "text": "Ads",
+      "link": "loadPoc3();",
+      "text": "Captions",
       "img": "img/recapschamps-1268-getty.png"
     },
     "6": {
-      "link": "return false;",
-      "text": "Performance",
+      "link": "loadPoc2();",
+      "text": "Bonus Player",
       "img": "img/recapschamps-1268-getty.png"
     }
   }

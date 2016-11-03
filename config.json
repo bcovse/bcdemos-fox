@@ -8,7 +8,8 @@
     "captions": {
       "accountId": "4365621380001",
       "bcPlayerId": "59579bce-1612-4607-8e8d-adc5db73766d",
-      "defaultVideo": "5189978007001"
+      "defaultVideo": "5189978007001",
+      "controls": true
     },
     "social": {
       "comment": "Endscreen with social sharing",
@@ -112,12 +113,12 @@
       "autoplay": true
     },
     "fox-std": {
-    "comment": "Fox News standard player",
-    "accountId": "4165107200001",
-    "bcPlayerId": "HJxBWWhwll",
-    "defaultVideo": "5189072676001",
-    "autoplay": true,
-    "controls":true
+      "comment": "Fox News standard player",
+      "accountId": "4365621380001",
+      "bcPlayerId": "59579bce-1612-4607-8e8d-adc5db73766d",
+      "defaultVideo": "5189978007001",
+      "autoplay": true,
+      "controls":true
     },
     "pip": {
       "comment": "PiP player",
@@ -167,6 +168,20 @@
           "js": "./js/manualRenditionSelection.js",
           "css": "./css/manualRenditionSelection.css",
           "options": {}
+        },
+        "social": {
+          "js": "http://players.brightcove.net/videojs-social/3/videojs-social.min.js",
+          "css": "http://players.brightcove.net/videojs-social/3/videojs-social.css",
+          "options": {
+            "services": {
+              "facebook": true,
+              "google": true,
+              "twitter": true,
+              "tumblr": false,
+              "pinterest": false,
+              "linkedin": true
+            }
+          }
         },
         "related": {
           "js": "//solutions.brightcove.com/bclifford/demo/player/js/videojs-related.min.js",

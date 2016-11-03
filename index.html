@@ -30,6 +30,7 @@
     createPlayer( 'p0', 'ad-playlist', 'main',  null);
     $( ".playlist-wrapper" ).show();
     $( ".sub-players" ).show();
+    $( ".player-stats").show();
   }
 
 // PIP
@@ -41,6 +42,8 @@
       $('#main').removeClass('col-sm-6').addClass('col-sm-12');
       createPlayer('inner_player', 'pip_inner', 'hidden', null);
       createPlayer('outer_player', 'pip', 'main', null);
+      $( ".sub-players" ).show();
+      $( ".player-stats").show();
     }
 
 // Captions
@@ -48,7 +51,8 @@
       destroyAllPlayers();
       hideAllDynamic();
       createPlayer( 'p0', 'captions', 'main', null);
-
+      $( ".sub-players" ).show();
+      $( ".player-stats").show();
     }
 
 // End Screen
@@ -56,6 +60,8 @@
       destroyAllPlayers();
       hideAllDynamic();
       createPlayer( 'p0', 'endscreen', 'main', null);
+      $( ".sub-players" ).show();
+      $( ".player-stats").show();
     }
 
 // Ads
@@ -63,6 +69,8 @@
       destroyAllPlayers();
       hideAllDynamic();
       createPlayer( 'p0', 'ad-std', 'main', null);
+      $( ".sub-players" ).show();
+      $( ".player-stats").show();
     }
 
 // Performance
@@ -70,6 +78,7 @@
       destroyAllPlayers();
       hideAllDynamic();
       createPlayer( 'p0', 'fox-std', 'main', null);
+      $( ".sub-players" ).show();
       $( ".player-stats").show();
     }
 

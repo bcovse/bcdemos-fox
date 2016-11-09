@@ -38,7 +38,7 @@ $(document).ready(function() {
     /** Event handler for the enlarge/reduce button **/
     //Make sure we don't add more than one
     if ($('.btn-enlarge').length == 0) {
-      $('#main').append('<a href="#" class="btn-enlarge">Enlarge</a>');
+      $('#main').append('<a href="#" class="btn-enlarge hidden-xs">Enlarge</a>');
 
       // If we're small, get bigger. If we're big, get small
       $('.btn-enlarge').click(function () {

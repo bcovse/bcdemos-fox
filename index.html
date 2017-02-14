@@ -81,6 +81,16 @@
       $( ".sub-players" ).show();
       $( ".player-stats").show();
     }
+    
+// Live AIS
+     function loadPoc7() {
+      destroyAllPlayers();
+      hideAllDynamic();
+      createPlayer( 'p0', 'live-ais', 'main', null);
+      $( ".sub-players" ).show();
+      $( ".player-stats").show();
+    }
+
 
     function loadHome() {
 //createPlayer('fs', 'big-bg', 'bg-video', null);
